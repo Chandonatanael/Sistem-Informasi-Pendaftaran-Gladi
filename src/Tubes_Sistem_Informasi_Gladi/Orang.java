@@ -12,11 +12,31 @@ import java.sql.Date;
  * @author chand
  */
 public class Orang {
-    private String nama;
-    private Date tglLahir;
-    private String tmptLahir;
-    private String alamat;
-    private int noHp;
-    private String email;
+    String nama = "";
+    String alamat;
+
+    public Orang(String nama, String alamat) {
+        this.nama = nama;
+        this.alamat = alamat;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+    
+    
+    
     
 }

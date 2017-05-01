@@ -5,29 +5,33 @@
  */
 package Tubes_Sistem_Informasi_Gladi;
 
+import java.util.Scanner;
+
 /**
  *
- * Nama : Gangsar Yoga Pamungkas
- * NIM : 1301154096
- * KLS : IF 39 12
+ * Nama : Gangsar Yoga Pamungkas NIM : 1301154096 KLS : IF 39 12
  */
-public class Mahasiswa {
+public class Mahasiswa extends Orang {
+
     private int nim;
-    private String nama;
-    private String jurusan;
-    private int tgl;
-    private String alamat;
     private int notelp;
-    int i;
-    private Mahasiswa[] daftar = new Mahasiswa[i];
-    public Mahasiswa(int nim,String nama, String jurusan,int tgl, String alamat, int notelp){
+    private String jurusan, prodi;
+
+    public Mahasiswa(String nama, String alamat, int nim, int notelp, String jurusan, String prodi) {
+
+        super(nama, alamat);
         this.nim = nim;
-        this.nama = nama;
-        this.jurusan = jurusan;
-        this.tgl = tgl;
-        this.alamat = alamat;
         this.notelp = notelp;
-        
+        this.jurusan = jurusan;
+        this.prodi = prodi;
+    }
+
+    public String getNama() {
+        return super.nama;
+    }
+
+    public String getAlamat() {
+        return super.alamat;
     }
 
     public int getNim() {
@@ -38,24 +42,8 @@ public class Mahasiswa {
         this.nim = nim;
     }
 
-    public String getNama() {
-        return nama;
-    }
-
     public void setNama(String nama) {
         this.nama = nama;
-    }
-
-    public int getTgl() {
-        return tgl;
-    }
-
-    public void setTgl(int tgl) {
-        this.tgl = tgl;
-    }
-
-    public String getAlamat() {
-        return alamat;
     }
 
     public void setAlamat(String alamat) {
@@ -77,5 +65,13 @@ public class Mahasiswa {
     public void setJurusan(String jurusan) {
         this.jurusan = jurusan;
     }
-    
+
+    public String getProdi() {
+        return prodi;
+    }
+
+    public void setProdi(String prodi) {
+        this.prodi = prodi;
+    }
+
 }

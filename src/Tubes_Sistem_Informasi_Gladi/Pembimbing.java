@@ -1,50 +1,27 @@
-package tubes;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Tubes_Sistem_Informasi_Gladi;
 
+import javax.print.DocFlavor;
+
+/**
+ *
+ * @author chand
+ */
 public class Pembimbing extends Orang{
-    private String nip;
-    private String prodi;
-    private String fakultas;
-    private String ruangan;
+    private int idPembimbing;
+    public Pembimbing(String nama, String alamat, int idPembimbing) {
+        super(nama, alamat);
+        this.idPembimbing = idPembimbing;   
+    }
+
+    public int getIdPembimbing() {
+        return idPembimbing;
+    }
     
-    public Pembimbing(String nama, String nip, String prodi, String fakultas, String ruangan){
-        super.setNama(nama);
-        this.nip = nip;
-        this.prodi = prodi;
-        this.fakultas = fakultas;
-        this.ruangan = ruangan;
-    }
-
-    public String getNip() {
-        return nip;
-    }
-
-    public void setNip(String nip) {
-        this.nip = nip;
-    }
-
-    public String getProdi() {
-        return prodi;
-    }
-
-    public void setProdi(String prodi) {
-        this.prodi = prodi;
-    }
-
-    public String getFakultas() {
-        return fakultas;
-    }
-
-    public void setFakultas(String fakultas) {
-        this.fakultas = fakultas;
-    }
-
-    public String getRuangan() {
-        return ruangan;
-    }
-
-    public void setRuangan(String ruangan) {
-        this.ruangan = ruangan;
-    }
     
     
 }
